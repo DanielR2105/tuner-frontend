@@ -5,6 +5,8 @@ import NewForm from "./Components/NewForm";
 import EditForm from "./Components/EditForm";
 import Songs from "./Components/Songs";
 import SongDetails from "./Components/SongDetails";
+import Playlists from "./Components/Playlists";
+import PlaylistDetails from "./Components/PlaylistDetails";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/songs/new" element={<NewForm />} />
           <Route path="/songs/:id" element={<SongDetails />} />
           <Route path="/songs/:id/edit" element={<EditForm />} />
+          <Route path="/playlists" element={<Playlists />} />
+          <Route path="/playlists/:id" element={<PlaylistDetails />} />
         </Routes>
       </Router>
     </div>
